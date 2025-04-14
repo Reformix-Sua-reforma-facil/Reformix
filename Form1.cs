@@ -16,5 +16,10 @@ namespace Reformix
         {
             InitializeComponent();
         }
+
+        private void grpPerfil_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
