@@ -1,6 +1,6 @@
 ﻿namespace Reformix
 {
-    partial class Form1
+    partial class TelaCadastro
     {
         /// <summary>
         /// Variável de designer necessária.
