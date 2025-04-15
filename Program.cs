@@ -16,7 +16,7 @@ namespace Reformix
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaCadastro());
+            Application.Run(new Login());
         }
     }
 }
