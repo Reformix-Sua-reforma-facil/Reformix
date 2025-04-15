@@ -52,5 +52,12 @@ namespace Reformix
         {
             // funcionalidade tela cadastrar
         }
+
+        private void textUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+ 
     }
 }
