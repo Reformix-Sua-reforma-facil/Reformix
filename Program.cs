@@ -16,7 +16,9 @@ namespace Reformix
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // CORREÇÃO: instanciando o formulário corretamente
+            Application.Run(new Telahistorico());
         }
     }
 }
