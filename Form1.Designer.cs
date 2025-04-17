@@ -28,231 +28,302 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.grpPerfil = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblDescricaoPerfil = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.lblConfiguracoes = new System.Windows.Forms.Label();
+            this.gbPerfil = new System.Windows.Forms.GroupBox();
             this.btnPerfil = new System.Windows.Forms.Button();
+            this.lblDescricaoPerfil = new System.Windows.Forms.Label();
+            this.lblPerfil = new System.Windows.Forms.Label();
             this.grpTema = new System.Windows.Forms.GroupBox();
+            this.cmbTema = new System.Windows.Forms.ComboBox();
+            this.lblTema = new System.Windows.Forms.Label();
+            this.cmbNotificacoes = new System.Windows.Forms.ComboBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblNotificacoes = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.grpPerfil.SuspendLayout();
+            this.lblHistorico = new System.Windows.Forms.Label();
+            this.btnHistorico = new System.Windows.Forms.Button();
+            this.btnSalvarTudo = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.picEngrenagem = new System.Windows.Forms.PictureBox();
+            this.btnExcluirConta = new System.Windows.Forms.Button();
+            this.lblAppName = new System.Windows.Forms.Label();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.gbPerfil.SuspendLayout();
             this.grpTema.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEngrenagem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblTitulo
+            // lblConfiguracoes
             // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Uighur", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(47, 23);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(157, 38);
-            this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "Configurações";
+            this.lblConfiguracoes.AutoSize = true;
+            this.lblConfiguracoes.BackColor = System.Drawing.Color.White;
+            this.lblConfiguracoes.Font = new System.Drawing.Font("Lucida Fax", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfiguracoes.Location = new System.Drawing.Point(255, 24);
+            this.lblConfiguracoes.Name = "lblConfiguracoes";
+            this.lblConfiguracoes.Size = new System.Drawing.Size(130, 18);
+            this.lblConfiguracoes.TabIndex = 0;
+            this.lblConfiguracoes.Text = "Configurações";
             // 
-            // grpPerfil
+            // gbPerfil
             // 
-            this.grpPerfil.Controls.Add(this.btnPerfil);
-            this.grpPerfil.Controls.Add(this.lblDescricaoPerfil);
-            this.grpPerfil.Controls.Add(this.label2);
-            this.grpPerfil.Location = new System.Drawing.Point(30, 64);
-            this.grpPerfil.Name = "grpPerfil";
-            this.grpPerfil.Size = new System.Drawing.Size(414, 119);
-            this.grpPerfil.TabIndex = 1;
-            this.grpPerfil.TabStop = false;
-            this.grpPerfil.Text = "groupBox-Perfil";
-            this.grpPerfil.Enter += new System.EventHandler(this.grpPerfil_Enter);
+            this.gbPerfil.BackColor = System.Drawing.Color.White;
+            this.gbPerfil.Controls.Add(this.btnPerfil);
+            this.gbPerfil.Controls.Add(this.lblDescricaoPerfil);
+            this.gbPerfil.Controls.Add(this.lblPerfil);
+            this.gbPerfil.Location = new System.Drawing.Point(18, 52);
+            this.gbPerfil.Name = "gbPerfil";
+            this.gbPerfil.Size = new System.Drawing.Size(400, 119);
+            this.gbPerfil.TabIndex = 1;
+            this.gbPerfil.TabStop = false;
             // 
-            // label2
+            // btnPerfil
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(10, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Perfil";
+            this.btnPerfil.Location = new System.Drawing.Point(91, 74);
+            this.btnPerfil.Name = "btnPerfil";
+            this.btnPerfil.Size = new System.Drawing.Size(230, 27);
+            this.btnPerfil.TabIndex = 2;
+            this.btnPerfil.Text = "Editar";
+            this.btnPerfil.UseVisualStyleBackColor = true;
             // 
             // lblDescricaoPerfil
             // 
             this.lblDescricaoPerfil.AutoSize = true;
-            this.lblDescricaoPerfil.Font = new System.Drawing.Font("Microsoft Uighur", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricaoPerfil.Location = new System.Drawing.Point(9, 36);
+            this.lblDescricaoPerfil.Font = new System.Drawing.Font("Nirmala Text", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescricaoPerfil.Location = new System.Drawing.Point(6, 37);
             this.lblDescricaoPerfil.Name = "lblDescricaoPerfil";
-            this.lblDescricaoPerfil.Size = new System.Drawing.Size(282, 36);
+            this.lblDescricaoPerfil.Size = new System.Drawing.Size(241, 20);
             this.lblDescricaoPerfil.TabIndex = 1;
-            this.lblDescricaoPerfil.Text = "Atualizar suas informações pessoais";
+            this.lblDescricaoPerfil.Text = "Atualize suas informações pessoais";
             // 
-            // btnPerfil
+            // lblPerfil
             // 
-            this.btnPerfil.Location = new System.Drawing.Point(136, 74);
-            this.btnPerfil.Name = "btnPerfil";
-            this.btnPerfil.Size = new System.Drawing.Size(152, 27);
-            this.btnPerfil.TabIndex = 2;
-            this.btnPerfil.Text = "button1";
-            this.btnPerfil.UseVisualStyleBackColor = true;
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPerfil.Location = new System.Drawing.Point(10, 16);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(51, 21);
+            this.lblPerfil.TabIndex = 0;
+            this.lblPerfil.Text = "Perfil";
             // 
             // grpTema
             // 
-            this.grpTema.Controls.Add(this.comboBox1);
-            this.grpTema.Controls.Add(this.label5);
+            this.grpTema.BackColor = System.Drawing.Color.White;
+            this.grpTema.Controls.Add(this.cmbTema);
+            this.grpTema.Controls.Add(this.lblTema);
             this.grpTema.Location = new System.Drawing.Point(30, 189);
             this.grpTema.Name = "grpTema";
-            this.grpTema.Size = new System.Drawing.Size(414, 91);
+            this.grpTema.Size = new System.Drawing.Size(400, 91);
             this.grpTema.TabIndex = 2;
             this.grpTema.TabStop = false;
-            this.grpTema.Text = "groupBox-Tema";
+            // 
+            // cmbTema
+            // 
+            this.cmbTema.FormattingEnabled = true;
+            this.cmbTema.Location = new System.Drawing.Point(91, 42);
+            this.cmbTema.Name = "cmbTema";
+            this.cmbTema.Size = new System.Drawing.Size(230, 21);
+            this.cmbTema.TabIndex = 8;
+            // 
+            // lblTema
+            // 
+            this.lblTema.AutoSize = true;
+            this.lblTema.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTema.Location = new System.Drawing.Point(17, 16);
+            this.lblTema.Name = "lblTema";
+            this.lblTema.Size = new System.Drawing.Size(51, 21);
+            this.lblTema.TabIndex = 0;
+            this.lblTema.Text = "Tema";
+            // 
+            // cmbNotificacoes
+            // 
+            this.cmbNotificacoes.FormattingEnabled = true;
+            this.cmbNotificacoes.Location = new System.Drawing.Point(102, 63);
+            this.cmbNotificacoes.Name = "cmbNotificacoes";
+            this.cmbNotificacoes.Size = new System.Drawing.Size(230, 21);
+            this.cmbNotificacoes.TabIndex = 1;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.comboBox2);
+            this.groupBox3.BackColor = System.Drawing.Color.White;
+            this.groupBox3.Controls.Add(this.cmbNotificacoes);
+            this.groupBox3.Controls.Add(this.lblNotificacoes);
             this.groupBox3.Location = new System.Drawing.Point(30, 298);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(414, 100);
+            this.groupBox3.Size = new System.Drawing.Size(400, 100);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox-Notificações";
+            // 
+            // lblNotificacoes
+            // 
+            this.lblNotificacoes.AutoSize = true;
+            this.lblNotificacoes.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotificacoes.Location = new System.Drawing.Point(8, 24);
+            this.lblNotificacoes.Name = "lblNotificacoes";
+            this.lblNotificacoes.Size = new System.Drawing.Size(106, 21);
+            this.lblNotificacoes.TabIndex = 7;
+            this.lblNotificacoes.Text = "Notificações";
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.button4);
+            this.groupBox4.BackColor = System.Drawing.Color.White;
+            this.groupBox4.Controls.Add(this.lblHistorico);
+            this.groupBox4.Controls.Add(this.btnHistorico);
             this.groupBox4.Location = new System.Drawing.Point(30, 404);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(414, 84);
+            this.groupBox4.Size = new System.Drawing.Size(400, 103);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox-Histórico de projetos";
             // 
-            // button2
+            // lblHistorico
             // 
-            this.button2.Location = new System.Drawing.Point(307, 522);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 35);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Salvar Tudo";
-            this.button2.UseVisualStyleBackColor = true;
+            this.lblHistorico.AutoSize = true;
+            this.lblHistorico.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHistorico.Location = new System.Drawing.Point(9, 16);
+            this.lblHistorico.Name = "lblHistorico";
+            this.lblHistorico.Size = new System.Drawing.Size(169, 21);
+            this.lblHistorico.TabIndex = 1;
+            this.lblHistorico.Text = "Histórico de projetos";
             // 
-            // button3
+            // btnHistorico
             // 
-            this.button3.Location = new System.Drawing.Point(67, 522);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 35);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Voltar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHistorico.Location = new System.Drawing.Point(91, 57);
+            this.btnHistorico.Name = "btnHistorico";
+            this.btnHistorico.Size = new System.Drawing.Size(230, 27);
+            this.btnHistorico.TabIndex = 0;
+            this.btnHistorico.Text = "Ver histórico completo";
+            this.btnHistorico.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnSalvarTudo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(8, 24);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(123, 35);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Notificações";
+            this.btnSalvarTudo.Location = new System.Drawing.Point(310, 522);
+            this.btnSalvarTudo.Name = "btnSalvarTudo";
+            this.btnSalvarTudo.Size = new System.Drawing.Size(108, 35);
+            this.btnSalvarTudo.TabIndex = 5;
+            this.btnSalvarTudo.Text = "Salvar Tudo";
+            this.btnSalvarTudo.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // btnVoltar
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 16);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 35);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Tema";
+            this.btnVoltar.Location = new System.Drawing.Point(18, 522);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(108, 35);
+            this.btnVoltar.TabIndex = 6;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // groupBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(91, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(230, 21);
-            this.comboBox1.TabIndex = 1;
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.picEngrenagem);
+            this.groupBox1.Controls.Add(this.btnExcluirConta);
+            this.groupBox1.Controls.Add(this.btnSalvarTudo);
+            this.groupBox1.Controls.Add(this.btnVoltar);
+            this.groupBox1.Controls.Add(this.lblAppName);
+            this.groupBox1.Controls.Add(this.pbLogo);
+            this.groupBox1.Controls.Add(this.gbPerfil);
+            this.groupBox1.Controls.Add(this.lblConfiguracoes);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(435, 601);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
             // 
-            // comboBox2
+            // picEngrenagem
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(91, 62);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(230, 21);
-            this.comboBox2.TabIndex = 0;
+            this.picEngrenagem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picEngrenagem.BackgroundImage")));
+            this.picEngrenagem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picEngrenagem.Location = new System.Drawing.Point(382, 24);
+            this.picEngrenagem.Name = "picEngrenagem";
+            this.picEngrenagem.Size = new System.Drawing.Size(36, 23);
+            this.picEngrenagem.TabIndex = 8;
+            this.picEngrenagem.TabStop = false;
             // 
-            // button4
+            // btnExcluirConta
             // 
-            this.button4.Location = new System.Drawing.Point(107, 49);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(203, 27);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnExcluirConta.Location = new System.Drawing.Point(171, 522);
+            this.btnExcluirConta.Name = "btnExcluirConta";
+            this.btnExcluirConta.Size = new System.Drawing.Size(94, 35);
+            this.btnExcluirConta.TabIndex = 7;
+            this.btnExcluirConta.Text = "Excluir conta";
+            this.btnExcluirConta.UseVisualStyleBackColor = true;
             // 
-            // label6
+            // lblAppName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Uighur", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(196, 35);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Histórico de projetos";
+            this.lblAppName.AutoSize = true;
+            this.lblAppName.Font = new System.Drawing.Font("Nirmala Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAppName.Location = new System.Drawing.Point(89, 25);
+            this.lblAppName.Name = "lblAppName";
+            this.lblAppName.Size = new System.Drawing.Size(106, 25);
+            this.lblAppName.TabIndex = 3;
+            this.lblAppName.Text = "REFORMIX";
+            // 
+            // pbLogo
+            // 
+            this.pbLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbLogo.BackgroundImage")));
+            this.pbLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pbLogo.Location = new System.Drawing.Point(18, 19);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(78, 38);
+            this.pbLogo.TabIndex = 3;
+            this.pbLogo.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 601);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(459, 640);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.grpTema);
-            this.Controls.Add(this.grpPerfil);
-            this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Configurações";
-            this.grpPerfil.ResumeLayout(false);
-            this.grpPerfil.PerformLayout();
+            this.gbPerfil.ResumeLayout(false);
+            this.gbPerfil.PerformLayout();
             this.grpTema.ResumeLayout(false);
             this.grpTema.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picEngrenagem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.GroupBox grpPerfil;
+        private System.Windows.Forms.Label lblConfiguracoes;
+        private System.Windows.Forms.GroupBox gbPerfil;
         private System.Windows.Forms.Button btnPerfil;
         private System.Windows.Forms.Label lblDescricaoPerfil;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblPerfil;
         private System.Windows.Forms.GroupBox grpTema;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblTema;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSalvarTudo;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Label lblNotificacoes;
+        private System.Windows.Forms.ComboBox cmbNotificacoes;
+        private System.Windows.Forms.Label lblHistorico;
+        private System.Windows.Forms.Button btnHistorico;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lblAppName;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Button btnExcluirConta;
+        private System.Windows.Forms.PictureBox picEngrenagem;
+        private System.Windows.Forms.ComboBox cmbTema;
     }
 }
 
