@@ -16,6 +16,7 @@ namespace Reformix
         {
             InitializeComponent();
         }
+
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -39,21 +40,5 @@ namespace Reformix
                 return;
             }
 
-            //Aqui voce pode salvar em banco de dados, arquivo, ou apenas exibir.
-            MessageBox.Show($"Usuário{nome}cadastrado com sucesso!");
-
-            // Limpa os campos 
-            txtNome.Text = "";
-            txtEmail.Text = "";
-            txtSenha.Text = "";
-
-
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-    }
-}
+            // Aqui você pode salvar em banco de dados, arquivo, ou apenas exibir.
+            MessageBox.Show($"Usuário {nome} cadas
