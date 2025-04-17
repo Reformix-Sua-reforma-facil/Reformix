@@ -10,13 +10,12 @@ using System.Windows.Forms;
 
 namespace Reformix
 {
-    public partial class TelaCadastro : Form
+    public partial class Form1 : Form
     {
-        public TelaCadastro()
+        public Form1()
         {
             InitializeComponent();
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -58,4 +57,3 @@ namespace Reformix
         }
     }
 }
-

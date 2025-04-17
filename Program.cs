@@ -16,7 +16,12 @@ namespace Reformix
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new TelaCadastro());
+=======
+
+            Application.Run(new Form1());
+>>>>>>> 61809bb (Revert "correção nome do arquivo de From1 para TelaCadastro")
         }
     }
 }
